@@ -225,7 +225,7 @@ def file_basic():
     print final_name
 
 
-def re_exp_basic():
+def re_exp_basic_on_file():
     try:
         file_content = open('test.txt', 'r')
     except IOError:
@@ -258,6 +258,101 @@ def re_exp_basic():
     print strings
 
 
+def reg_exp_basic():
+    '''
+    []      - Represent a class of characters i.e. [abc],[0-9],[trc],[dsaf],[.;,] etc ...
+    . ^ $ * + ? { } [ ] \ | ( ) - special metacharacters
+    [a]     - match character 'a' -- class of character metioned by []
+    [^a]    - match character except 'a'
+    '\'     - Use back slash to match special character -- \\ or \[
+    ^       - not condition where we can reverse the match condition as 
+              [abc] - match a,b or c
+              [^abc] - match any character except a and b and c
+    .       - Matches any character except new line character 
+    (re.DOTALL) - Match even new line
+    \d      - Matches any decimal digit; this is equivalent to the class [0-9].
+    \D      - Matches any non-digit character; this is equivalent to the class [^0-9].
+    \s      - Matches any whitespace character; this is equivalent to the class [ \t\n\r\f\v].
+    \S      - Matches any non-whitespace character; this is equivalent to the class [^ \t\n\r\f\v].
+    \w      - Matches any alphanumeric character; this is equivalent to the class [a-zA-Z0-9_].
+    \W      - Matches any non-alphanumeric character; this is equivalent to the class [^a-zA-Z0-9_].
+
+For repeating characters (called repeated qualifier):
+
+    *       - Match the any number of times char match i.e ca*t will match 
+                ct      - 0 time
+                cat     - 1 time
+                caat    - 2 time
+    +       - Match the any number of times char match but minimum one occurens required i.e ca*t will match 
+                cat     - 1 time
+                caat    - 2 time
+    ?       - Matches either once or zero times; you can think of it as marking something as being optional. 
+              For example, home-?brew matches either homebrew or home-brew.
+    {m,n}   - where m and n are decimal integers. This qualifier means there must be at least m repetitions, and at most n. 
+              For example, a/{1,3}b will match a/b, a//b, and a///b. 
+              It won’t match ab, which has no slashes, or a////b, which has four.
+
+
+    Now, we have pattern in string fromat, we need to convert in to a pattern object so we can call other methods on that
+    object 
+
+>>> pattern_obj = re.compile('[a-z]+')                      -   find all alphabates and at least one char
+
+    call following methods on pattern object with test data (srting ) to get match object.
+
+    match()	    Determine if the RE matches at the beginning of the string.
+    search()	Scan through a string, looking for any location where this RE matches.
+    findall()	Find all substrings where the RE matches, and returns them as a list.
+    finditer()	Find all substrings where the RE matches, and returns them as an iterator.
+
+>>> m = pattern_obj.match('tempo')
+>>> m  
+<_sre.SRE_Match object at 0x...>
+
+    We have match obj, so lets get matched data and position
+
+    group()	Return the string matched by the RE
+    start()	Return the starting position of the match
+    end()	Return the ending position of the match
+    span()	Return a tuple containing the (start, end) positions of the match
+
+>>> m.group()
+'tempo'
+>>> m.start(), m.end()
+(0, 5)
+>>> m.span()
+(0, 5)
+
+Module-Level Functions¶
+    You don’t have to create a pattern object and call its methods; the re module also provides top-level functions called 
+    match(), search(), findall(), sub(), and so forth. 
+    These functions take the same arguments as the corresponding pattern method, 
+    with the RE string added as the first argument, and still return either None or a match object instance.
+
+>>> print re.match(r'From\s+', 'Fromage amk')
+None
+>>> re.match(r'From\s+', 'From amk Thu May 14 19:12:10 1998')  
+<_sre.SRE_Match object at 0x...>
+
+Note: 
+    If a program contains a lot of regular expressions, or re-uses the same ones in several locations,
+     then it might be worthwhile to collect all the definitions in one place, 
+     in a section of code that compiles all the REs ahead of time. To take an example from the standard library,
+      here’s an extract from the deprecated xmllib module:
+
+ref = re.compile( ... )
+entityref = re.compile( ... )
+charref = re.compile( ... )
+starttagopen = re.compile( ... )
+
+    I generally prefer to work with the compiled object, even for one-time uses,
+    but few people will be as much of a purist about this as I am.
+
+
+    '''
+    test_string = ''
+
+
 def main():
     # print 'this is main function '
     # string_basic()
@@ -266,7 +361,8 @@ def main():
     # tuple_basic()
     # dict_basic()
     # file_basic()
-    re_exp_basic()
+    reg_exp_basic()
+    # re_exp_basic_on_file()
 
 
 if __name__ == '__main__':
