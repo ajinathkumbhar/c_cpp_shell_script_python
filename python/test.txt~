@@ -1,0 +1,327 @@
+--------- beginning of system
+04-23 16:08:21.653  1314  2558 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:08:23.864  1314  1635 I PowerManagerService: Waking up from dozing (uid=1000 reason=android.policy:POWER)...
+04-23 16:08:23.866  1314  1371 I DisplayPowerController: Blocking screen on until initial contents have been drawn.
+04-23 16:08:23.868  1314  1368 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+04-23 16:08:24.045  1314  1371 I DisplayPowerController: Unblocked screen on after 179 ms
+04-23 16:08:24.312  1314  1371 W PowerManagerService: Screen on took 450 ms
+04-23 16:08:24.312  1314  1371 I DreamManagerService: Gently waking up from dream.
+04-23 16:08:24.312  1314  1366 I DreamManagerService: Performing gentle wake from dream.
+04-23 16:08:24.346  1314  1834 I DreamManagerService: Leaving dreamland.
+04-23 16:08:24.346  1314  1366 I DreamManagerService: Performing gentle wake from dream.
+04-23 16:08:24.346  1314  1366 I DreamController: Stopping dream: name=ComponentInfo{com.android.systemui/com.android.systemui.doze.DozeService}, isTest=false, canDoze=true, userId=0
+04-23 16:08:24.505  1314 16238 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:08:24.508  1314 16238 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:08:24.820  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras) } to com.jio.myjio/.jionet.receiver.WifiScanReceiver
+04-23 16:08:33.052  1314  1635 I PowerManagerService: Going to sleep due to power button (uid 1000)...
+04-23 16:08:33.065  1314  1314 V FingerprintService: startAuthentication(com.android.systemui)
+04-23 16:08:33.065  1314  1314 V FingerprintService: starting client AuthenticationClient(com.android.systemui), initiatedByClient = true)
+04-23 16:08:33.080  1314  1314 W FingerprintService: client com.android.systemui is authenticating...
+04-23 16:08:33.091 28518 28518 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1556 android.content.ContextWrapper.bindService:684 com.sensetime.faceunlock.SMFaceUnlockService.bindKeyGuardService:127 com.sensetime.faceunlock.SMFaceUnlockService.onCreate:138 android.app.ActivityThread.handleCreateService:3339 
+04-23 16:08:33.536  1314  1371 I DisplayPowerController: Blocking screen off
+04-23 16:08:33.536  1314  1371 I DisplayPowerController: Unblocked screen off after 1 ms
+04-23 16:08:33.555  1314  1368 I DisplayManagerService: Display device changed state: "Built-in Screen", OFF
+04-23 16:08:33.802  1314  1371 I DreamManagerService: Entering dreamland.
+04-23 16:08:33.803  1314  1371 I PowerManagerService: Dozing...
+04-23 16:08:33.803  1314  1366 I DreamController: Starting dream: name=ComponentInfo{com.android.systemui/com.android.systemui.doze.DozeService}, isTest=false, canDoze=true, userId=0
+04-23 16:08:33.917  1691  1691 V KeyguardStatusView: refresh statusview showing:true
+04-23 16:08:33.926  1691  1691 V KeyguardDisplayManager: show
+04-23 16:08:34.052  1314  1834 W ActivityManager: Permission Denial: opening provider com.smartron.tronxlauncher.LauncherProvider from ProcessRecord{b3adc23 2616:com.lbe.parallel.intl:mdserver/u0a130} (pid=2616, uid=10130) requires com.smartron.launcher.permission.READ_SETTINGS or com.smartron.launcher.permission.WRITE_SETTINGS
+04-23 16:08:38.305  1314  1635 I PowerManagerService: Waking up from dozing (uid=1000 reason=android.policy:POWER)...
+04-23 16:08:38.305  1314  1371 I DisplayPowerController: Blocking screen on until initial contents have been drawn.
+04-23 16:08:38.307  1314  1368 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+04-23 16:08:38.748  1314  1371 I DisplayPowerController: Unblocked screen on after 442 ms
+04-23 16:08:38.749  1314  1371 W PowerManagerService: Screen on took 446 ms
+04-23 16:08:38.749  1314  1371 I DreamManagerService: Gently waking up from dream.
+04-23 16:08:38.749  1314  1366 I DreamManagerService: Performing gentle wake from dream.
+04-23 16:08:38.759  1314  2558 I DreamManagerService: Leaving dreamland.
+04-23 16:08:38.760  1314  1366 I DreamManagerService: Performing gentle wake from dream.
+04-23 16:08:38.760  1314  1366 I DreamController: Stopping dream: name=ComponentInfo{com.android.systemui/com.android.systemui.doze.DozeService}, isTest=false, canDoze=true, userId=0
+04-23 16:08:41.744  1314  2558 I LockSettingsService: Unlocking user 0 with secret only, length 64
+04-23 16:08:41.745  1314  2558 W ActivityManager: Expected user 0 in state RUNNING_LOCKED but was in state RUNNING_UNLOCKED
+04-23 16:08:41.745  1314  2558 I LockSettingsService: Disabling escrow token on user 0
+04-23 16:08:42.109  1314  1314 V FingerprintService: stop client com.android.systemui
+04-23 16:08:42.118  1691  1691 V KeyguardDisplayManager: hide
+04-23 16:08:42.125  1314  1314 W FingerprintService: client com.android.systemui is no longer authenticating
+04-23 16:08:42.125  1314  1314 V FingerprintService: Done with client: com.android.systemui
+04-23 16:08:42.125  1314  1314 V FingerprintService: handleError(client=com.android.systemui, error = 5)
+04-23 16:08:42.255  1314  1314 W AccessibilityManagerService: Skipping accessibilty service com.launcher.ol/com.battery.battery.MyAccessibilityService: it does not require the permission android.permission.BIND_ACCESSIBILITY_SERVICE
+04-23 16:08:42.280  1314  2558 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.USER_PRESENT flg=0x24200010 } to com.graymatrix.did/com.quantumgraph.sdk.NotificationIntentProcessor
+04-23 16:08:42.310  1314  3059 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.USER_PRESENT flg=0x24200010 } to imoblife.androidsensorbox/imoblife.util.SensorReceiver
+04-23 16:08:43.197  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras) } to com.jio.myjio/.jionet.receiver.WifiScanReceiver
+04-23 16:08:43.956  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras) } to com.jio.myjio/.jionet.receiver.WifiScanReceiver
+04-23 16:08:47.557  1314  1635 I PowerManagerService: Going to sleep due to power button (uid 1000)...
+04-23 16:08:47.576  1314  1314 V FingerprintService: startAuthentication(com.android.systemui)
+04-23 16:08:47.577  1314  1314 V FingerprintService: starting client AuthenticationClient(com.android.systemui), initiatedByClient = true)
+04-23 16:08:47.591 28518 28518 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1556 android.content.ContextWrapper.bindService:684 com.sensetime.faceunlock.SMFaceUnlockService.bindKeyGuardService:127 com.sensetime.faceunlock.SMFaceUnlockService.onCreate:138 android.app.ActivityThread.handleCreateService:3339 
+04-23 16:08:47.600  1314  1314 W FingerprintService: client com.android.systemui is authenticating...
+04-23 16:08:48.036  1314  1371 I DisplayPowerController: Blocking screen off
+04-23 16:08:48.037  1314  1371 I DisplayPowerController: Unblocked screen off after 0 ms
+04-23 16:08:48.058  1314  1368 I DisplayManagerService: Display device changed state: "Built-in Screen", OFF
+04-23 16:08:48.091  1314  1635 I PowerManagerService: Waking up from dozing (uid=1000 reason=android.policy:POWER)...
+04-23 16:08:48.091  1314  1371 I DisplayPowerController: Blocking screen on until initial contents have been drawn.
+04-23 16:08:48.176  1691  1691 V KeyguardStatusView: refresh statusview showing:true
+04-23 16:08:48.186  1691  1691 V KeyguardDisplayManager: show
+04-23 16:08:48.310  1314  1368 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+04-23 16:08:48.759  1314 11677 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:08:48.796  1314  1371 I DisplayPowerController: Unblocked screen on after 705 ms
+04-23 16:08:48.797  1314  1371 W PowerManagerService: Screen on took 709 ms
+04-23 16:08:48.869  1314  2556 W ActivityManager: Permission Denial: opening provider com.smartron.tronxlauncher.LauncherProvider from ProcessRecord{b3adc23 2616:com.lbe.parallel.intl:mdserver/u0a130} (pid=2616, uid=10130) requires com.smartron.launcher.permission.READ_SETTINGS or com.smartron.launcher.permission.WRITE_SETTINGS
+04-23 16:08:48.931  1314  1834 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:08:57.447  1314 11885 I ActivityManager: START u0 {act=com.android.phone.EmergencyDialer.DIAL flg=0x14800000 pkg=com.android.phone cmp=com.android.phone/.EmergencyDialer} from uid 10035
+04-23 16:08:57.804  1314  1368 D ActivityManager: awakeFromSleepingLocked: previously pausing activity didn't pause
+04-23 16:08:58.045  1314  1314 V FingerprintService: stop client com.android.systemui
+04-23 16:08:58.053  1314  1314 W FingerprintService: client com.android.systemui is no longer authenticating
+04-23 16:08:58.054  1314  1314 V FingerprintService: Done with client: com.android.systemui
+04-23 16:08:58.054  1314  1314 V FingerprintService: handleError(client=com.android.systemui, error = 5)
+04-23 16:08:59.692  1314  2556 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:09:03.206  1691  1691 V KeyguardStatusView: refresh statusview showing:true
+04-23 16:09:03.211  1314  1314 V FingerprintService: startAuthentication(com.android.systemui)
+04-23 16:09:03.212  1314  1314 V FingerprintService: starting client AuthenticationClient(com.android.systemui), initiatedByClient = true)
+04-23 16:09:03.226  1314  1314 W FingerprintService: client com.android.systemui is authenticating...
+04-23 16:09:05.116  1314  1661 I LockSettingsService: Unlocking user 0 with secret only, length 64
+04-23 16:09:05.116  1314  1661 W ActivityManager: Expected user 0 in state RUNNING_LOCKED but was in state RUNNING_UNLOCKED
+04-23 16:09:05.116  1314  1661 I LockSettingsService: Disabling escrow token on user 0
+04-23 16:09:05.474  1314  1314 V FingerprintService: stop client com.android.systemui
+04-23 16:09:05.476  1691  1691 V KeyguardDisplayManager: hide
+04-23 16:09:05.479  1314  1314 W FingerprintService: client com.android.systemui is no longer authenticating
+04-23 16:09:05.479  1314  1314 V FingerprintService: Done with client: com.android.systemui
+04-23 16:09:05.479  1314  1314 V FingerprintService: handleError(client=com.android.systemui, error = 5)
+04-23 16:09:05.493  1314  1314 W AccessibilityManagerService: Skipping accessibilty service com.launcher.ol/com.battery.battery.MyAccessibilityService: it does not require the permission android.permission.BIND_ACCESSIBILITY_SERVICE
+04-23 16:09:05.569  1314  2558 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.USER_PRESENT flg=0x24200010 } to com.graymatrix.did/com.quantumgraph.sdk.NotificationIntentProcessor
+04-23 16:09:05.591  1314 16238 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.USER_PRESENT flg=0x24200010 } to imoblife.androidsensorbox/imoblife.util.SensorReceiver
+04-23 16:09:05.832  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras) } to com.jio.myjio/.jionet.receiver.WifiScanReceiver
+04-23 16:09:13.825  1314  1635 I PowerManagerService: Going to sleep due to power button (uid 1000)...
+04-23 16:09:13.842  1314  1314 V FingerprintService: startAuthentication(com.android.systemui)
+04-23 16:09:13.842  1314  1314 V FingerprintService: starting client AuthenticationClient(com.android.systemui), initiatedByClient = true)
+04-23 16:09:13.863  1314  1314 W FingerprintService: client com.android.systemui is authenticating...
+04-23 16:09:13.866 28518 28518 W ContextImpl: Calling a method in the system process without a qualified user: android.app.ContextImpl.bindService:1556 android.content.ContextWrapper.bindService:684 com.sensetime.faceunlock.SMFaceUnlockService.bindKeyGuardService:127 com.sensetime.faceunlock.SMFaceUnlockService.onCreate:138 android.app.ActivityThread.handleCreateService:3339 
+04-23 16:09:14.305  1314  1371 I DisplayPowerController: Blocking screen off
+04-23 16:09:14.306  1314  1371 I DisplayPowerController: Unblocked screen off after 0 ms
+04-23 16:09:14.332  1314  1368 I DisplayManagerService: Display device changed state: "Built-in Screen", OFF
+04-23 16:09:14.577  1314  1371 I DreamManagerService: Entering dreamland.
+04-23 16:09:14.578  1314  1371 I PowerManagerService: Dozing...
+04-23 16:09:14.579  1314  1366 I DreamController: Starting dream: name=ComponentInfo{com.android.systemui/com.android.systemui.doze.DozeService}, isTest=false, canDoze=true, userId=0
+04-23 16:09:14.766  1691  1691 V KeyguardStatusView: refresh statusview showing:true
+04-23 16:09:14.771  1691  1691 V KeyguardDisplayManager: show
+04-23 16:09:14.908  1314 11677 W ActivityManager: Permission Denial: opening provider com.smartron.tronxlauncher.LauncherProvider from ProcessRecord{b3adc23 2616:com.lbe.parallel.intl:mdserver/u0a130} (pid=2616, uid=10130) requires com.smartron.launcher.permission.READ_SETTINGS or com.smartron.launcher.permission.WRITE_SETTINGS
+04-23 16:09:14.966  1314 11677 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:09:25.218  1314 11677 I chatty  : uid=1000(system) Binder:1314_14 identical 1 line
+04-23 16:09:30.218  1314 11677 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:09:37.096  1314  1635 I PowerManagerService: Waking up from dozing (uid=1000 reason=android.policy:POWER)...
+04-23 16:09:37.098  1314  1371 I DisplayPowerController: Blocking screen on until initial contents have been drawn.
+04-23 16:09:37.101  1314  1368 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+04-23 16:09:37.326  1314  2566 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:09:37.328  1314  2566 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:09:37.559  1314  1371 I DisplayPowerController: Unblocked screen on after 460 ms
+04-23 16:09:37.560  1314  1371 W PowerManagerService: Screen on took 469 ms
+04-23 16:09:37.561  1314  1371 I DreamManagerService: Gently waking up from dream.
+04-23 16:09:37.561  1314  1366 I DreamManagerService: Performing gentle wake from dream.
+04-23 16:09:37.581  1314  2566 I DreamManagerService: Leaving dreamland.
+04-23 16:09:37.582  1314  1366 I DreamManagerService: Performing gentle wake from dream.
+04-23 16:09:37.582  1314  1366 I DreamController: Stopping dream: name=ComponentInfo{com.android.systemui/com.android.systemui.doze.DozeService}, isTest=false, canDoze=true, userId=0
+04-23 16:09:38.325  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras) } to com.jio.myjio/.jionet.receiver.WifiScanReceiver
+04-23 16:09:47.092  1314  1371 I PowerManagerService: Going to sleep due to screen timeout (uid 1000)...
+04-23 16:09:47.560  1314  1371 I DisplayPowerController: Blocking screen off
+04-23 16:09:47.562  1314  1371 I DisplayPowerController: Unblocked screen off after 1 ms
+04-23 16:09:47.582  1314  1368 I DisplayManagerService: Display device changed state: "Built-in Screen", OFF
+04-23 16:09:47.636  1314  2556 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:09:47.832  1314  1371 I DreamManagerService: Entering dreamland.
+04-23 16:09:47.832  1314  1371 I PowerManagerService: Dozing...
+04-23 16:09:47.833  1314  1366 I DreamController: Starting dream: name=ComponentInfo{com.android.systemui/com.android.systemui.doze.DozeService}, isTest=false, canDoze=true, userId=0
+04-23 16:09:47.987  1314 11885 W ActivityManager: Permission Denial: opening provider com.smartron.tronxlauncher.LauncherProvider from ProcessRecord{b3adc23 2616:com.lbe.parallel.intl:mdserver/u0a130} (pid=2616, uid=10130) requires com.smartron.launcher.permission.READ_SETTINGS or com.smartron.launcher.permission.WRITE_SETTINGS
+04-23 16:09:48.037  1314  2556 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:09:58.313  1314 11885 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:10:03.333  1314 11885 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:10:27.762  1314  2566 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:10:28.615  1314  1351 W BroadcastQueue: Permission Denial: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to ProcessRecord{b3adc23 2616:com.lbe.parallel.intl:mdserver/u0a130} (pid=2616, uid=10130) requires android.permission.READ_LOGS due to sender android (uid 1000)
+04-23 16:10:30.348  1314  1351 I chatty  : uid=1000(system) ActivityManager identical 2 lines
+04-23 16:10:30.348  1314  1351 W BroadcastQueue: Permission Denial: receiving Intent { act=android.intent.action.DROPBOX_ENTRY_ADDED flg=0x10 (has extras) } to ProcessRecord{b3adc23 2616:com.lbe.parallel.intl:mdserver/u0a130} (pid=2616, uid=10130) requires android.permission.READ_LOGS due to sender android (uid 1000)
+04-23 16:10:31.028  1314  1882 I ProcessStatsService: Added stats: 2018-04-23-11-34-14, over +2h31m11s778ms
+04-23 16:10:31.050  1314  1882 I ProcessStatsService: Added stats: 2018-04-23-08-33-51, over +3h0m23s525ms
+04-23 16:10:31.061  1314  1882 I ProcessStatsService: Added stats: 2018-04-23-05-27-44, over +3h6m7s37ms
+04-23 16:10:31.070  1314  1882 I ProcessStatsService: Added stats: 2018-04-23-02-10-01, over +3h17m42s177ms
+04-23 16:10:31.085  1314  1882 I ProcessStatsService: Added stats: 2018-04-22-23-01-00, over +3h9m1s780ms
+04-23 16:10:31.104  1314  1882 I ProcessStatsService: Added stats: 2018-04-22-19-59-11, over +3h1m47s924ms
+04-23 16:10:59.614  1314  2566 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:11:11.500  1314  2566 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:11:15.535  1314  1635 I PowerManagerService: Waking up from dozing (uid=1000 reason=android.policy:POWER)...
+04-23 16:11:15.537  1314  1371 I DisplayPowerController: Blocking screen on until initial contents have been drawn.
+04-23 16:11:15.539  1314  1368 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+04-23 16:11:15.737  1314 11885 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:11:15.985  1314  1371 I DisplayPowerController: Unblocked screen on after 448 ms
+04-23 16:11:15.987  1314  1371 W PowerManagerService: Screen on took 455 ms
+04-23 16:11:15.989  1314  1371 I DreamManagerService: Gently waking up from dream.
+04-23 16:11:15.989  1314  1366 I DreamManagerService: Performing gentle wake from dream.
+04-23 16:11:16.002  1314  2566 I DreamManagerService: Leaving dreamland.
+04-23 16:11:16.002  1314  1366 I DreamManagerService: Performing gentle wake from dream.
+04-23 16:11:16.002  1314  1366 I DreamController: Stopping dream: name=ComponentInfo{com.android.systemui/com.android.systemui.doze.DozeService}, isTest=false, canDoze=true, userId=0
+04-23 16:11:16.717  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras) } to com.jio.myjio/.jionet.receiver.WifiScanReceiver
+04-23 16:11:26.917  1314  1661 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:11:29.749  1314  1371 I PowerManagerService: Going to sleep due to screen timeout (uid 1000)...
+04-23 16:11:30.234  1314  1371 I DisplayPowerController: Blocking screen off
+04-23 16:11:30.235  1314  1371 I DisplayPowerController: Unblocked screen off after 1 ms
+04-23 16:11:30.262  1314  1368 I DisplayManagerService: Display device changed state: "Built-in Screen", OFF
+04-23 16:11:30.345  1314  1635 I PowerManagerService: Waking up from dozing (uid=1000 reason=android.policy:POWER)...
+04-23 16:11:30.345  1314  1371 I DisplayPowerController: Blocking screen on until initial contents have been drawn.
+04-23 16:11:30.525  1314  1368 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+04-23 16:11:30.569  1314  1661 W ActivityManager: Permission Denial: opening provider com.smartron.tronxlauncher.LauncherProvider from ProcessRecord{b3adc23 2616:com.lbe.parallel.intl:mdserver/u0a130} (pid=2616, uid=10130) requires com.smartron.launcher.permission.READ_SETTINGS or com.smartron.launcher.permission.WRITE_SETTINGS
+04-23 16:11:30.622  1314  5908 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:11:30.989  1314  1371 I DisplayPowerController: Unblocked screen on after 644 ms
+04-23 16:11:30.991  1314  1371 W PowerManagerService: Screen on took 649 ms
+04-23 16:11:32.174  1314  1635 I PowerManagerService: Going to sleep due to power button (uid 1000)...
+04-23 16:11:32.642  1314  1371 I DisplayPowerController: Blocking screen off
+04-23 16:11:32.643  1314  1371 I DisplayPowerController: Unblocked screen off after 1 ms
+04-23 16:11:32.662  1314  1368 I DisplayManagerService: Display device changed state: "Built-in Screen", OFF
+04-23 16:11:32.790  1314  1635 I PowerManagerService: Waking up from dozing (uid=1000 reason=android.policy:POWER)...
+04-23 16:11:32.792  1314  1371 I DisplayPowerController: Blocking screen on until initial contents have been drawn.
+04-23 16:11:32.901  1314  1368 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+04-23 16:11:32.915  1314  1371 I DisplayPowerController: Unblocked screen on after 123 ms
+04-23 16:11:33.015  1314 11885 W ActivityManager: Permission Denial: opening provider com.smartron.tronxlauncher.LauncherProvider from ProcessRecord{b3adc23 2616:com.lbe.parallel.intl:mdserver/u0a130} (pid=2616, uid=10130) requires com.smartron.launcher.permission.READ_SETTINGS or com.smartron.launcher.permission.WRITE_SETTINGS
+04-23 16:11:33.341  1314  1371 W PowerManagerService: Screen on took 554 ms
+04-23 16:11:37.816  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras) } to com.jio.myjio/.jionet.receiver.WifiScanReceiver
+04-23 16:11:43.268  1314  1371 I PowerManagerService: Going to sleep due to screen timeout (uid 1000)...
+04-23 16:11:43.736  1314  1371 I DisplayPowerController: Blocking screen off
+04-23 16:11:43.738  1314  1371 I DisplayPowerController: Unblocked screen off after 2 ms
+04-23 16:11:43.757  1314  1368 I DisplayManagerService: Display device changed state: "Built-in Screen", OFF
+04-23 16:11:44.015  1314  1371 I DreamManagerService: Entering dreamland.
+04-23 16:11:44.016  1314  1371 I PowerManagerService: Dozing...
+04-23 16:11:44.017  1314  1366 I DreamController: Starting dream: name=ComponentInfo{com.android.systemui/com.android.systemui.doze.DozeService}, isTest=false, canDoze=true, userId=0
+04-23 16:11:44.080  1314  1661 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:11:44.223  1314  1661 W ActivityManager: Permission Denial: opening provider com.smartron.tronxlauncher.LauncherProvider from ProcessRecord{b3adc23 2616:com.lbe.parallel.intl:mdserver/u0a130} (pid=2616, uid=10130) requires com.smartron.launcher.permission.READ_SETTINGS or com.smartron.launcher.permission.WRITE_SETTINGS
+04-23 16:11:44.294  1314 11677 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:11:54.538  1314 11677 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:12:07.418  1314  2558 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:12:09.302  1314  1350 I UsageStatsService: User[0] Flushing usage stats to disk
+04-23 16:12:13.294  1314  2558 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:13:22.222  1314  2558 I chatty  : uid=1000(system) Binder:1314_A identical 3 lines
+04-23 16:13:26.336  1314  2558 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:13:38.060   828   828 W wificond: Failed to get NL80211_ATTR_STATUS_CODE
+04-23 16:13:38.154  1314  1351 I ActivityManager: Start proc 6224:com.application.zomato.ordering/u0a129 for broadcast com.application.zomato.ordering/com.akamai.android.sdk.internal.AnaBroadcastReceiver
+04-23 16:13:38.659  1314  1661 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.wifi.STATE_CHANGE flg=0x4000010 (has extras) } to com.jio.myjio/.jionet.receiver.WifiStateChangeListener
+04-23 16:13:38.659  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.wifi.STATE_CHANGE flg=0x4000010 (has extras) } to com.sonyliv/com.akamai.android.sdk.internal.AnaBroadcastReceiver
+04-23 16:14:00.221  1314  2558 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:14:21.540  1314  1356 E BatteryExternalStatsWorker: no controller energy info supplied for bluetooth
+04-23 16:14:27.990  1314  5908 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:14:28.202  1314  2558 I ActivityManager: Start proc 6363:com.lbe.parallel.intl:P3/u0a130 for content provider com.lbe.parallel.intl/com.lbe.doubleagent.client.proxy.ProviderProxy$P3
+04-23 16:14:29.274  6363  6374 W ActivityThread: Content provider com.google.android.gsf.gservices.GservicesProvider already published as com.google.android.gsf.gservices
+04-23 16:14:52.897  1314  1661 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:14:58.813  1314  2558 I ActivityManager: Killing 32382:com.google.android.apps.translate/u0a128 (adj 906): empty #17
+04-23 16:14:58.858  1314  1834 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:15:14.463  1314  1834 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:15:43.818  1314  1314 I ActivityManager: Start proc 6463:com.android.chrome/u0a58 for service com.android.chrome/org.chromium.components.background_task_scheduler.BackgroundTaskJobService
+04-23 16:15:44.243  1314  1834 I ActivityManager: Killing 32043:android.process.media/u0a13 (adj 906): empty #17
+04-23 16:16:11.058  1314  1356 E BatteryExternalStatsWorker: no controller energy info supplied for bluetooth
+04-23 16:16:15.948  1314 11885 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:16:35.339  1314 11885 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:16:43.984  1314  1314 I ActivityManager: Start proc 6490:com.gaana/u0a147 for service com.gaana/com.moengage.core.DataSyncJob
+04-23 16:16:44.388  1314  1661 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:16:44.392  1314 22234 I ActivityManager: Process com.google.android.googlequicksearchbox:search (pid 31383) has died: svcb SVC 
+04-23 16:16:44.392  1314 22234 W ActivityManager: Scheduling restart of crashed service com.google.android.googlequicksearchbox/com.google.android.apps.gsa.search.core.BroadcastListenerService in 1000ms
+04-23 16:16:44.479  1314  2566 W ActivityManager: Permission Denial: Accessing service ComponentInfo{com.google.android.music/com.google.android.music.dial.DialMediaRouteProviderService} from pid=6490, uid=10147 that is not exported from uid 10078
+04-23 16:16:45.430  1314  1351 I ActivityManager: Start proc 6561:com.google.android.googlequicksearchbox:search/u0a45 for service com.google.android.googlequicksearchbox/com.google.android.apps.gsa.search.core.BroadcastListenerService
+04-23 16:16:45.645  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras) } to com.jio.myjio/.jionet.receiver.WifiScanReceiver
+04-23 16:16:46.226  1314  3059 I ActivityManager: Start proc 6585:com.google.process.gapps/u0a16 for content provider com.google.android.gsf/.settings.GoogleSettingsProvider
+04-23 16:16:46.303  1314 22234 I ActivityManager: Start proc 6602:com.google.android.partnersetup/u0a21 for content provider com.google.android.partnersetup/.RlzAppProvider
+04-23 16:17:06.509  1314  3059 I ActivityManager: Killing 4733:com.android.chrome:sandboxed_process0/u0a132i10 (adj 906): empty #17
+04-23 16:17:06.511  1314  3059 I ActivityManager: Killing 4693:in.amazon.mShop.android.shopping/u0a132 (adj 906): empty #18
+04-23 16:17:06.530  1314  3059 W ActivityManager: Scheduling restart of crashed service in.amazon.mShop.android.shopping/org.chromium.content.app.SandboxedProcessService0 in 1000ms
+04-23 16:17:06.557  1314  1356 D KernelUidCpuTimeReader: Removing uids 99010-99010
+04-23 16:17:06.573  1314  3059 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ LISTEN id=47, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ], android.os.BinderProxy@1348ff8)
+04-23 16:17:06.573  1314  5908 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ LISTEN id=46, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED&FOREGROUND] ], android.os.BinderProxy@90f0cd1)
+04-23 16:17:22.100  1314  2566 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:17:22.104  1314  2566 I ActivityManager: Killing 4544:com.android.chrome:sandboxed_process0/u0a133i9 (adj 906): empty #17
+04-23 16:17:22.125  1314  2566 W ActivityManager: Scheduling restart of crashed service com.amazon.avod.thirdpartyclient/org.chromium.content.app.SandboxedProcessService0 in 1000ms
+04-23 16:17:22.155  1314  1356 D KernelUidCpuTimeReader: Removing uids 99009-99009
+04-23 16:17:42.376  1314  3116 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:17:57.422  1314  3116 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:18:28.176  1314  2566 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:18:28.218  1314  2912 I ActivityManager: Start proc 6675:com.google.android.talk/u0a152 for service com.google.android.talk/com.google.android.apps.hangouts.concurrent.impl.GcmTriggeredNotifier
+04-23 16:18:59.139  1314  2566 I Telecom : PhoneAccountRegistrar: SimCallManager queried, returning: null: TSI.gSCM@BMM
+04-23 16:18:59.177  1314  2566 I Telecom : PhoneAccountRegistrar: SimCallManager queried, returning: null: TSI.gSCM@BMU
+04-23 16:19:12.100  1314  1882 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:19:12.104  1314  1882 I ActivityManager: Killing 4510:com.amazon.avod.thirdpartyclient/u0a133 (adj 906): empty #17
+04-23 16:19:12.185  1314  1882 D ConnectivityService: ConnectivityService NetworkRequestInfo binderDied(NetworkRequest [ LISTEN id=45, [ Capabilities: INTERNET&NOT_RESTRICTED&TRUSTED] ], android.os.BinderProxy@c9bf932)
+04-23 16:19:33.699  1314  2566 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:20:20.338  1314  1335 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:20:45.241  1314  1371 I PowerManagerService: Waking up from dozing (uid=1000 reason=android.server.power:POWER)...
+04-23 16:20:45.245  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.ACTION_POWER_DISCONNECTED flg=0x4000010 (has extras) } to com.google.android.apps.photos/.scheduler.PowerReceiver
+04-23 16:20:45.247  1314  1371 I DisplayPowerController: Blocking screen on until initial contents have been drawn.
+04-23 16:20:45.255  1314  1368 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+04-23 16:20:45.299  1314  1356 E BatteryExternalStatsWorker: no controller energy info supplied for bluetooth
+04-23 16:20:45.311  1314  1371 I DisplayPowerController: Unblocked screen on after 64 ms
+04-23 16:20:45.405  1314  1351 I ActivityManager: Start proc 6805:com.eterno/u0a104 for broadcast com.eterno/com.newshunt.app.view.receiver.BatteryReceiver
+04-23 16:20:45.704  1314  1371 W PowerManagerService: Screen on took 463 ms
+04-23 16:20:45.704  1314  1371 I DreamManagerService: Gently waking up from dream.
+04-23 16:20:45.704  1314  1366 I DreamManagerService: Performing gentle wake from dream.
+04-23 16:20:45.729  1314 16238 I DreamManagerService: Leaving dreamland.
+04-23 16:20:45.729  1314  1366 I DreamManagerService: Performing gentle wake from dream.
+04-23 16:20:45.729  1314  1366 I DreamController: Stopping dream: name=ComponentInfo{com.android.systemui/com.android.systemui.doze.DozeService}, isTest=false, canDoze=true, userId=0
+04-23 16:20:46.176  1314 16238 I ActivityManager: Killing 31419:com.google.android.apps.nbu.paisa.user/u0a108 (adj 906): empty #17
+04-23 16:20:46.200  1314 16238 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.ACTION_POWER_DISCONNECTED flg=0x4000010 (has extras) } to com.jio.myjio/.jiotalk.service.JioTalkAlarmRestoreReceiver
+04-23 16:20:46.200  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.ACTION_POWER_DISCONNECTED flg=0x4000010 (has extras) } to com.jio.myjio/com.inn.passivesdk.receiver.ServiceStarterReceiver
+04-23 16:20:46.200  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.ACTION_POWER_DISCONNECTED flg=0x4000010 (has extras) } to com.reliance.jio.jioswitch/.utils.PowerPlugInReceiver
+04-23 16:20:46.200  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.ACTION_POWER_DISCONNECTED flg=0x4000010 (has extras) } to com.sonyliv/com.akamai.android.sdk.internal.AnaBroadcastReceiver
+04-23 16:20:46.215  1314  1335 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:20:46.219  1314 22234 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:20:46.224  1314  1366 D UsbDeviceManager: Clear notification
+04-23 16:20:46.243  1314  1351 I ActivityManager: Start proc 6947:android.process.media/u0a13 for broadcast com.android.providers.media/.MtpReceiver
+04-23 16:20:46.408  1314 16238 I ActivityManager: Killing 29127:com.timesgroup.magicbricks/u0a163 (adj 906): empty #17
+04-23 16:20:46.495  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras) } to com.jio.myjio/.jionet.receiver.WifiScanReceiver
+04-23 16:20:46.517  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras) } to com.jio.myjio/.jionet.receiver.WifiScanReceiver
+04-23 16:20:55.243  1314  1371 I PowerManagerService: Going to sleep due to screen timeout (uid 1000)...
+04-23 16:20:55.734  1314  1371 I DisplayPowerController: Blocking screen off
+04-23 16:20:55.735  1314  1371 I DisplayPowerController: Unblocked screen off after 1 ms
+04-23 16:20:55.863  1314  1368 I DisplayManagerService: Display device changed state: "Built-in Screen", OFF
+04-23 16:20:56.129  1314  1371 I DreamManagerService: Entering dreamland.
+04-23 16:20:56.130  1314  1366 I DreamController: Starting dream: name=ComponentInfo{com.android.systemui/com.android.systemui.doze.DozeService}, isTest=false, canDoze=true, userId=0
+04-23 16:20:56.133  1314  1371 I PowerManagerService: Dozing...
+04-23 16:20:56.370  1314 16310 W ActivityManager: Permission Denial: opening provider com.smartron.tronxlauncher.LauncherProvider from ProcessRecord{b3adc23 2616:com.lbe.parallel.intl:mdserver/u0a130} (pid=2616, uid=10130) requires com.smartron.launcher.permission.READ_SETTINGS or com.smartron.launcher.permission.WRITE_SETTINGS
+04-23 16:21:06.706  1314  1335 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:21:11.943  1314 16238 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:21:16.198  1314  1335 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:21:31.695   826   969 E NetlinkListener: recvmsg failed (No buffer space available)
+04-23 16:21:31.981  1314  1335 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:22:14.940  1314  1335 I chatty  : uid=1000(system) Binder:1314_2 identical 2 lines
+04-23 16:22:16.864  1314  1335 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:22:43.781  1314  1834 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:23:00.957  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.ACTION_POWER_CONNECTED flg=0x4000010 (has extras) } to com.google.android.apps.photos/.scheduler.PowerReceiver
+04-23 16:23:00.963  1314  1314 I EntropyMixer: Writing entropy...
+04-23 16:23:00.963  1314  1371 I PowerManagerService: Waking up from dozing (uid=1000 reason=android.server.power:POWER)...
+04-23 16:23:00.998  1314  1371 I DisplayPowerController: Blocking screen on until initial contents have been drawn.
+04-23 16:23:01.005  1314  1368 I DisplayManagerService: Display device changed state: "Built-in Screen", ON
+04-23 16:23:01.028  1314  1356 E BatteryExternalStatsWorker: no controller energy info supplied for bluetooth
+04-23 16:23:01.169  1314 16310 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.ACTION_POWER_CONNECTED flg=0x4000010 (has extras) } to com.jio.myjio/.jiotalk.service.JioTalkAlarmRestoreReceiver
+04-23 16:23:01.178  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.ACTION_POWER_CONNECTED flg=0x4000010 (has extras) } to com.jio.myjio/com.bb.lib.receiver.PowerConnectionReceiver
+04-23 16:23:01.179  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.ACTION_POWER_CONNECTED flg=0x4000010 (has extras) } to com.jio.myjio/com.inn.passivesdk.receiver.ServiceStarterReceiver
+04-23 16:23:01.184  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.ACTION_POWER_CONNECTED flg=0x4000010 (has extras) } to com.reliance.jio.jioswitch/.utils.PowerPlugInReceiver
+04-23 16:23:01.184  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.ACTION_POWER_CONNECTED flg=0x4000010 (has extras) } to com.sonyliv/com.akamai.android.sdk.internal.AnaBroadcastReceiver
+04-23 16:23:01.185  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.intent.action.ACTION_POWER_CONNECTED flg=0x4000010 (has extras) } to in.amazon.mShop.android.shopping/com.amazon.clouddrive.library.device.receivers.AutoUploadReceiverProxy
+04-23 16:23:01.450  1314  1371 I DisplayPowerController: Unblocked screen on after 452 ms
+04-23 16:23:01.452  1314  1371 W PowerManagerService: Screen on took 488 ms
+04-23 16:23:01.452  1314  1371 I DreamManagerService: Gently waking up from dream.
+04-23 16:23:01.452  1314  1366 I DreamManagerService: Performing gentle wake from dream.
+04-23 16:23:01.467  1314 22234 I DreamManagerService: Leaving dreamland.
+04-23 16:23:01.467  1314  1366 I DreamManagerService: Performing gentle wake from dream.
+04-23 16:23:01.467  1314  1366 I DreamController: Stopping dream: name=ComponentInfo{com.android.systemui/com.android.systemui.doze.DozeService}, isTest=false, canDoze=true, userId=0
+04-23 16:23:01.537  1314  1366 D UsbDeviceManager: push notification:USB charging this device
+04-23 16:23:01.560  1314 22234 I ActivityManager: Start proc 7104:com.daamitt.walnut.app/u0a219 for service com.daamitt.walnut.app/.services.LogNotificationService
+04-23 16:23:01.565  1314  1882 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:23:01.569  1314 22234 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:23:02.173  1314  1351 W BroadcastQueue: Background execution not allowed: receiving Intent { act=android.net.wifi.SCAN_RESULTS flg=0x4000010 (has extras) } to com.jio.myjio/.jionet.receiver.WifiScanReceiver
+04-23 16:23:10.965  1314  1371 I PowerManagerService: Going to sleep due to screen timeout (uid 1000)...
+04-23 16:23:11.473  1314  1371 I DisplayPowerController: Blocking screen off
+04-23 16:23:11.544  1314  1371 I DisplayPowerController: Unblocked screen off after 70 ms
+04-23 16:23:11.551  1314  1368 I DisplayManagerService: Display device changed state: "Built-in Screen", OFF
+04-23 16:23:11.814  1314  1371 I DreamManagerService: Entering dreamland.
+04-23 16:23:11.815  1314  1371 I PowerManagerService: Dozing...
+04-23 16:23:11.818  1314  1366 I DreamController: Starting dream: name=ComponentInfo{com.android.systemui/com.android.systemui.doze.DozeService}, isTest=false, canDoze=true, userId=0
+04-23 16:23:12.054  1314  1882 W ActivityManager: Permission Denial: opening provider com.smartron.tronxlauncher.LauncherProvider from ProcessRecord{b3adc23 2616:com.lbe.parallel.intl:mdserver/u0a130} (pid=2616, uid=10130) requires com.smartron.launcher.permission.READ_SETTINGS or com.smartron.launcher.permission.WRITE_SETTINGS
+04-23 16:23:22.421  1314  1882 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+04-23 16:23:22.425  1314  1351 I ActivityManager: Killing 4926:com.lbe.parallel.intl:P0/u0a130 (adj 906): empty #17
+04-23 16:23:38.459  1314  1335 W BroadcastQueue: Permission Denial: receiving Intent { act=android.net.conn.DATA_ACTIVITY_CHANGE flg=0x10 (has extras) } to ProcessRecord{2488958 10653:com.lbe.parallel.intl:P2/u0a130} (pid=10653, uid=10130) requires android.permission.RECEIVE_DATA_ACTIVITY_CHANGE due to sender android (uid 1000)
+--------- beginning of events
+04-23 16:24:02.019  1691  1800 I sysui_multi_action: [757,1093,758,4,793,37268,1094,9469952,1095,5]
+04-23 16:24:03.256  2397  5752 I sysui_action: [920,1914937533]
+04-23 16:24:03.256  2397  5752 I sysui_multi_action: [757,920,758,4,759,1914937533]
+04-23 16:24:03.427  1314  1350 I am_pss  : [2397,10016,com.google.android.gms.persistent,51002368,44687360,0]

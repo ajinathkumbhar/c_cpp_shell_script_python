@@ -72,6 +72,7 @@ def string_basic():
     else:
         print 'Please check with maintaince manger'
 
+
 def list_basic(list_mates):
     member_list = []
     print list_mates
@@ -85,18 +86,17 @@ def list_basic(list_mates):
 
     list_mates.append('rajesh')
     print list_mates
-    list_mates.insert(3,'VISHAL')
+    list_mates.insert(3, 'VISHAL')
     print list_mates
     list_mates.remove('ajinath')
     print list_mates
 
-    list_mates_hyd = ['SUMIT','prafull','nandya']
+    list_mates_hyd = ['SUMIT', 'prafull', 'nandya']
     list_mates_hyd.extend(list_mates)
     print list_mates_hyd
 
     if 'sumit' in list_mates_hyd:
         print 'Sumit lives in hyd'
-
 
     list_short_name = []
     list_long_name = []
@@ -104,41 +104,39 @@ def list_basic(list_mates):
     for name in list_mates_hyd:
         if len(name) > 5:
             list_long_name.append(name)
-        
+
         if len(name) <= 5:
             list_short_name.append(name)
-    
+
     print ' long names : ',  list_long_name
     print ' short names: ',  list_short_name
 
-
-    ### Sorting 
-    lsit_char = [ 'a' , 'A' , 'B' , 'b']
+    # Sorting
+    lsit_char = ['a', 'A', 'B', 'b']
     print sorted(lsit_char)
     print sorted(lsit_char, reverse=True)
     print sorted(lsit_char, key=len)
     print 'upper and lower'
     print sorted(lsit_char)
-    print sorted(lsit_char,key=str.lower)
+    print sorted(lsit_char, key=str.lower)
 
-    list_int = [ 1, 44, 7, 9, 7676, 55, 898, 33]
+    list_int = [1, 44, 7, 9, 7676, 55, 898, 33]
     sum = 0
     for num in list_int:
         sum = sum + num
     print list_int
     print sum
-   
-  
+
 
 def is_prime_num(num):
     isPrime = None
     if num > 1:
-        for no in range(2,num):
+        for no in range(2, num):
             if (num % no) == 0 and num == no:
                 isPrime = True
-            elif (num % no)  == 0 and num !=0:
+            elif (num % no) == 0 and num != 0:
                 isPrime = False
-              
+
     else:
         isPrime = True
 
@@ -149,10 +147,9 @@ def is_prime_num(num):
 
 
 def tuple_basic():
-    tpl_home = ['iron',3,'Wash',5.99,'C']
+    tpl_home = ['iron', 3, 'Wash', 5.99, 'C']
     print tpl_home
 
-    
     list_str = []
     list_num = []
 
@@ -166,24 +163,24 @@ def tuple_basic():
     print list_num
     print list_str
 
+
 def dict_basic():
     dict_mob = {
-        'shinu' : '98789977',
-        'sumit' : '7866778',
-        'ajinath' : '986058499',
+        'shinu': '98789977',
+        'sumit': '7866778',
+        'ajinath': '986058499',
     }
     print dict_mob
     print len(dict_mob)
     print dict_mob.has_key('sanjay')
-
 
     for key in dict_mob:
         if key.startswith('s'):
             print key + ' is from S family'
 
     dict_square = {}
-    for num in range(0,100):
-        dict_square[num] = num * num  
+    for num in range(0, 100):
+        dict_square[num] = num * num
 
     print dict_square
 
@@ -198,23 +195,23 @@ def dict_basic():
         print val
         print '-' * 90
 
+
 def file_basic():
     try:
-        file_content = open('test.txt','r')
+        file_content = open('test.txt', 'r')
     except IOError:
         print 'file opened failed'
-    
+
     try:
         file_filtered = open('filtered.txt', 'w')
     except IOError:
         print 'filtered file create failed'
 
     for line in file_content:
-        list_words = line.split() 
+        list_words = line.split()
         if 'BroadcastQueue:' in list_words:
             file_filtered.write(line)
-        
-  
+
     name = 'shriNivaS PATil'
     tmp_name = name.lower()
     print tmp_name
@@ -227,12 +224,13 @@ def file_basic():
     final_name = ''.join(list_char)
     print final_name
 
+
 def re_exp_basic():
     try:
-        file_content = open('test.txt','r')
+        file_content = open('test.txt', 'r')
     except IOError:
         print 'file opened failed'
-    
+
     print ' Opening file : ' + os.path.abspath('test.txt')
     try:
         file_filtered = open('filtered.txt', 'w')
@@ -240,19 +238,19 @@ def re_exp_basic():
         print 'filtered file create failed'
 
     for line in file_content:
-        match = re.search(r'Broadcast',line)
+        match = re.search(r'Broadcast', line)
         if match:
             #print match.group()
             file_filtered.write(line)
-            
+
     str = 'sringu asdlk klfjwep0 safajd fajs fas shinu@gmail.com al;sdjf aldfal;sfjasf'
     print str
     match = re.search(r'[\w.-]+@[\w.-]+', str)
     if match:
-        print match.group()  ## 'alice-b@google.com'
+        print match.group()  # 'alice-b@google.com'
 
     try:
-        file_content = open('test.txt','r')
+        file_content = open('test.txt', 'r')
     except IOError:
         print 'file opened failed'
 
@@ -260,15 +258,14 @@ def re_exp_basic():
     print strings
 
 
-
 def main():
     # print 'this is main function '
     # string_basic()
-    #list_roomates = ['shinu','ajinath','nilesh','sanjay'    if os.path.
-    #list_basic(list_roomates)
-    #tuple_basic()
-    #dict_basic()
-    #file_basic()
+    # list_roomates = ['shinu','ajinath','nilesh','sanjay'    if os.path.
+    # list_basic(list_roomates)
+    # tuple_basic()
+    # dict_basic()
+    # file_basic()
     re_exp_basic()
 
 
