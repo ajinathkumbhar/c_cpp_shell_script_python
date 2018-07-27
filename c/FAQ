@@ -1,0 +1,24 @@
+
+- diff declaration and defination 
+- Is declaration takes memory at compile time ?
+- Write program to access each element of 2d matrix by using pointer 
+- what malloc return in below case and how ?
+	
+			ptr = malloc(0)
+
+- How memory get freed by free(ptr) ? Is there any bookeeping in malloc ?
+- memory allocation : malloc, clloc , realloc and free
+- compiler, linker , loader , debugger ... toolchain concepts
+- What is dirent structure in linux ? Where is it use ?
+
+
+
+
+
+
+
+
+C++
+
+- string class ?
+

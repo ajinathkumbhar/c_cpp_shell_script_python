@@ -1,0 +1,1 @@
+/usr/bin/cc      CMakeFiles/ifelse.dir/ifelse.c.o  -o ../bin/ifelse -rdynamic 

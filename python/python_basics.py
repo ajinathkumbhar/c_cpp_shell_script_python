@@ -296,6 +296,7 @@ For repeating characters (called repeated qualifier):
     Now, we have pattern in string fromat, we need to convert in to a pattern object so we can call other methods on that
     object 
 
+
 >>> pattern_obj = re.compile('[a-z]+')                      -   find all alphabates and at least one char
 
     call following methods on pattern object with test data (srting ) to get match object.
@@ -347,6 +348,77 @@ starttagopen = re.compile( ... )
 
     I generally prefer to work with the compiled object, even for one-time uses,
     but few people will be as much of a purist about this as I am.
+
+
+Grouping: 
+  Groups are marked by the '(', ')' metacharacters. '(' and ')' have much the same meaning as they do in mathematical expressions;
+
+>>> p = re.compile('(ab)*')
+>>> print(p.match('ababababab').span())
+(0, 10)
+
+find a double word in string ( \1 is two match same group in current position )
+
+>>> p = re.compile(r'\b(\w+)\s+\1\b')
+>>> p.search('Paris in the the spring').group()
+'the the'
+
+Named group:
+The syntax for a named group is one of the Python-specific extensions: (?P<name>...). name is, obviously, the name of the group.
+
+>>> p = re.compile(r'(?P<word>\b\w+\b)')
+>>> m = p.search( '(((( Lots of punctuation )))' )
+>>> m.group('word')
+'Lots'
+>>> m.group(1)
+'Lots'
+
+
+InternalDate = re.compile(r'INTERNALDATE "'
+        r'(?P<day>[ 123][0-9])-(?P<mon>[A-Z][a-z][a-z])-'
+        r'(?P<year>[0-9][0-9][0-9][0-9])'
+        r' (?P<hour>[0-9][0-9]):(?P<min>[0-9][0-9]):(?P<sec>[0-9][0-9])'
+        r' (?P<zonen>[-+])(?P<zoneh>[0-9][0-9])(?P<zonem>[0-9][0-9])'
+        r'"')
+
+Find doubled word in named group
+
+>>> p = re.compile(r'\b(?P<word>\w+)\s+(?P=word)\b')
+>>> p.search('Paris in the the spring').group()
+'the the'
+
+find xxxx.xxxx 
+
+.*[.].*$
+
+Lookahead Assertions¶
+
+(?=...)
+Positive lookahead assertion. This succeeds if the contained regular expression, 
+represented here by ..., successfully matches at the current location, and fails otherwise.
+
+(?!...)
+Negative lookahead assertion. This is the opposite of the positive assertion; 
+it succeeds if the contained expression doesn’t match at the current position in the string.
+
+find filename with specific extention not matching i.e xxxx.bat or xxx.xxx.bat
+
+.*[.](?!bat$)[^.]*$   -- exclude .bat 
+.*[.](?=bat$)[^.]*$    -- include .bat
+
+.*[.](?!bat$|exe$)[^.]*$  -- exlude .bat or .exe
+.*[.](?=bat$|exe$)[^.]*$   -- include .bat or .exe
+
+
+Modifying Strings
+    Up to this point, we’ve simply performed searches against a static string. Regular expressions are also commonly used to modify strings in various ways, using the following pattern methods:
+
+    Method/Attribute	Purpose
+    split()	            Split the string into a list, splitting it wherever the RE matches
+    sub()	            Find all substrings where the RE matches, and replace them with a different string
+    subn()          	Does the same thing as sub(), but returns the new string and the number of replacements
+
+
 
 
     '''
