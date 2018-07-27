@@ -17,7 +17,7 @@ install: libstldata
 	$(shell sudo cp libstldata.so /usr/lib/)
 	$(shell sudo cp *.h /usr/include/)
 
-#clean:
-#	rm -rf *.o libstldata*
+clean:
+	rm -rf *.o libstldata*
 
 
