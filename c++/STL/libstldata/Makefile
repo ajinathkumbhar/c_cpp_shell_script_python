@@ -4,17 +4,20 @@ CPPFLAGS = -Wall
 SRC	 = STL_data.cpp
 INCLUDE	 = STL_data.h 
 CPPFLAGS_LIB = -shared -Wl,-soname,
-	     
-all: libstldata
+ 
+
+libstldata: STL_data_obj
+	$(CC) $(CPPFLAGS) $(CPPFLAGS_LIB)$@.so -o $@.so *.o
 
 STL_data_obj: $(SRC)
 	$(CC) $(CPPFLAGS) $(PIC) -c $(SRC)
 
-libstldata: STL_data_obj
-	$(CC) $(CPPFLAGS) $(CPPFLAGS_LIB)$@.so.1 -o $@.so.1.0 *.o
+#.PHONY: libstldata 
+install: libstldata   
+	$(shell sudo cp libstldata.so /usr/lib/)
+	$(shell sudo cp *.h /usr/include/)
 
-clean:
-	rm -rf *.o libstldata*
+#clean:
+#	rm -rf *.o libstldata*
 
 
-#g++ -shared -Wall -Wl,-soname,libstl.so.1 -o libstl.so.1.0 STL_data.o

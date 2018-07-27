@@ -1,8 +1,8 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<iostream>
-#include "data/STL_data.h"
-//#include<STL_data.h>
+//#include "data/STL_data.h"
+#include<STL_data.h>
 
 using namespace std;
 
