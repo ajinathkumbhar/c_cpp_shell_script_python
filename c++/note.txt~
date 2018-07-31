@@ -1,0 +1,20 @@
+- Hand run
+- We can write code for 2 or many program and execute it for different name and separate with argv[0]( check init.cpp) 
+- int main( int argc, char * argv[] ) -- can be -- int main(int argc, char ** argv)
+- write signal handler as following 
+
+system/core/init/init.cpp
+968      action.sa_handler = [](int signal) {
+969          // These signal handlers are also caught for processes forked from init, however we do not
+970          // want them to trigger reboot, so we directly call _exit() for children processes here.
+971          if (getpid() != 1) {
+972              _exit(signal);
+973          }
+974  
+975          // panic() reboots to bootloader
+976          panic();
+977      };
+
+- References vs Pointers
+- rewise https://www.geeksforgeeks.org/references-in-c/
+- rewise https://www.geeksforgeeks.org/write-c-program-wont-compiler-c/

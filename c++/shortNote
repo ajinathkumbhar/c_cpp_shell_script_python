@@ -1,0 +1,2 @@
+- The tuple is not avavilable in c++98, Use -std=c++11  to compile program with #include<tuple>
+- Print cpp standerd version ( cout << __cplusplus ;)

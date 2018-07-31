@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ajinath/0001-old-home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/STL/containers/src/pair.cpp
+stdio.h
+-
+stdlib.h
+-
+iostream
+-
+

@@ -1,0 +1,1 @@
+/usr/bin/c++   -Wall -std=c++11    CMakeFiles/stringtuto.dir/src/strings_basic.cpp.o  -o stringtuto -rdynamic 
