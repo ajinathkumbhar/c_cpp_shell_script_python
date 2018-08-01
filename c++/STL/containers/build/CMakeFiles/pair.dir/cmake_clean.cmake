@@ -1,7 +1,7 @@
 FILE(REMOVE_RECURSE
   "CMakeFiles/pair.dir/src/pair.cpp.o"
-  "pair.pdb"
-  "pair"
+  "bin/pair.pdb"
+  "bin/pair"
 )
 
 # Per-language clean rules from dependency scanning.

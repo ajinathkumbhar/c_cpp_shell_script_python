@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/STL/algorithm/libstldata/STL_data.cpp
+STL_data.h
+/home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/STL/algorithm/libstldata/STL_data.h
+
+/home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/STL/algorithm/libstldata/STL_data.h
+stdlib.h
+-
+iostream
+-
+fstream
+-
+stdio.h
+-
+assert.h
+-
+

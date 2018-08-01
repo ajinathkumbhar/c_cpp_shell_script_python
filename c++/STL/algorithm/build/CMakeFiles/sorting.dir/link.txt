@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/sorting.dir/src/STL_sorting.cpp.o  -o bin/sorting -rdynamic lib/libstldata.so -Wl,-rpath,/home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/STL/algorithm/build/lib 

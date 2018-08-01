@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/STL/algorithm/src/STL_sorting.cpp
+stdio.h
+-
+stdlib.h
+-
+iostream
+-
+STL_data.h
+-
+

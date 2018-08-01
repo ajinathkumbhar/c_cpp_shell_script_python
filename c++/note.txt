@@ -18,3 +18,6 @@ system/core/init/init.cpp
 - References vs Pointers
 - rewise https://www.geeksforgeeks.org/references-in-c/
 - rewise https://www.geeksforgeeks.org/write-c-program-wont-compiler-c/
+- static ?
+- char const * and const char * ?
+- gcc vs g++ vs c++ vs clang

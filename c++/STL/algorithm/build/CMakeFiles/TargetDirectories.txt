@@ -1,0 +1,2 @@
+/home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/STL/algorithm/build/CMakeFiles/sorting.dir
+/home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/STL/algorithm/build/libstldata/CMakeFiles/stldata.dir

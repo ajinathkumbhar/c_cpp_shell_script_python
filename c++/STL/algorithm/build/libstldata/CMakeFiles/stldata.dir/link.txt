@@ -1,0 +1,1 @@
+/usr/bin/c++  -fPIC    -shared -Wl,-soname,libstldata.so -o ../lib/libstldata.so CMakeFiles/stldata.dir/STL_data.cpp.o 
