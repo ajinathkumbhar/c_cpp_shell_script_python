@@ -18,3 +18,11 @@ system/core/init/init.cpp
 - References vs Pointers
 - rewise https://www.geeksforgeeks.org/references-in-c/
 - rewise https://www.geeksforgeeks.org/write-c-program-wont-compiler-c/
+- static ?
+- char const * and const char * ?
+- gcc vs g++ vs c++ vs clang
+- For Example to redirect the stdout to say a textfile, we could write (freopen)?
+- The tuple is not avavilable in c++98, Use -std=c++11  to compile program with #include<tuple>
+- Print cpp standerd version ( cout << __cplusplus ;)
+- Use array as like map ( ref camera HAL characteritics)
+- Use structure and function pointer ( ref user space driver lib)

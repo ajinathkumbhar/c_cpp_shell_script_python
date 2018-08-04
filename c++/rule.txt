@@ -1,3 +1,0 @@
-
-- Use array as like map ( ref camera HAL characteritics)
-- Use structure and function pointer ( ref user space driver lib)

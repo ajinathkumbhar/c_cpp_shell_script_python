@@ -72,6 +72,9 @@ int main(int argc, char * argv[]) {
     // 2 - double
     // 3 - havle
     // 4 - even or odd
+    FILE * fd ;
+    fd = freopen("/tmp/logs.txt","w+",stderr);
+    cout << " Enter dec number : " ;
     cin >> clg::num;
     clg::num = 'a';
     printf("%c --- \n\n ",clg::num);
