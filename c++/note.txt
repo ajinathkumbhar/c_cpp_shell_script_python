@@ -26,3 +26,17 @@ system/core/init/init.cpp
 - Print cpp standerd version ( cout << __cplusplus ;)
 - Use array as like map ( ref camera HAL characteritics)
 - Use structure and function pointer ( ref user space driver lib)
+- Use const variable for constant values ex. const int sleeptime = 100;
+- Why we need static var or function ?
+
+
+
+
+
+tools:
+- nm
+- readelf
+- objdump
+- gdb
+- valgrid
+
