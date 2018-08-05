@@ -6,3 +6,13 @@
 
 #IncludeRegexTransform: 
 
+/home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/src/strings_basic.cpp
+stdio.h
+-
+stdlib.h
+-
+iostream
+-
+bits/stdc++.h
+-
+

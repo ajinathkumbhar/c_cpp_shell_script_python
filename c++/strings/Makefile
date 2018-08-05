@@ -45,7 +45,7 @@ CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 CMAKE_SOURCE_DIR = /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajinath/0001-old-home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings
+CMAKE_BINARY_DIR = /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -72,9 +72,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajinath/0001-old-home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/CMakeFiles /home/ajinath/0001-old-home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/CMakeFiles /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajinath/0001-old-home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/CMakeFiles 0
 .PHONY : all
 
 # The main clean target

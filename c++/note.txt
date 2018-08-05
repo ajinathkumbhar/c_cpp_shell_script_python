@@ -28,9 +28,44 @@ system/core/init/init.cpp
 - Use structure and function pointer ( ref user space driver lib)
 - Use const variable for constant values ex. const int sleeptime = 100;
 - Why we need static var or function ?
+- Get the random index of an array ( use (rand() % sizeof(array)) )
+- storage classes ( auto,extern, static, register)
+- memory allocation ( malloc , calloc ,realloc, kalloc, new , delete etc ..)
+- Casting 
+	1. const_cast
+	2. static_cast
+	3. dynamic_cast
+	4. reinterpret_cast
+- https://www.geeksforgeeks.org/counts-distinct-consecutive-sub-string-length-two-using-c-stl/        -- rewise after map
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- Optimization:
+	1. code 
+	2. compiler (-O1,-O2,-O3)
+	3. memory
+	4. code size
+	5. thread time
+	6. function time 
 
 
 tools:

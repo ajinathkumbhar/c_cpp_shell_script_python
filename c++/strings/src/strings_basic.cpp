@@ -82,6 +82,11 @@ int main(int argc, char const * argv[]) {
 	book_name.replace(4,5,"Windows");
 	cout << book_name << endl;
 
+	//return 0;
+	string companyName = "Kryon mobile \n pvt ltd. \n tembhurni \n 413211\n";
+	string companyName_a = R"(Kryon mobile \n pvt ltd. \n tembhurni \n 413211\n)";
+	cout << companyName << '\n';
+	cout <<companyName_a << '\n';
 	return EXIT_SUCCESS;
 }
 

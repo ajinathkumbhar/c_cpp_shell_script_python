@@ -3,7 +3,7 @@
 
 # Relative path conversion top directories.
 SET(CMAKE_RELATIVE_PATH_TOP_SOURCE "/home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings")
-SET(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/ajinath/0001-old-home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings")
+SET(CMAKE_RELATIVE_PATH_TOP_BINARY "/home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings")
 
 # Force unix paths in dependencies.
 SET(CMAKE_FORCE_UNIX_PATHS 1)

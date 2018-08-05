@@ -53,7 +53,7 @@ CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 CMAKE_SOURCE_DIR = /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajinath/0001-old-home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings
+CMAKE_BINARY_DIR = /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings
 
 #=============================================================================
 # Target rules for target CMakeFiles/stringtuto.dir
@@ -62,7 +62,7 @@ CMAKE_BINARY_DIR = /home/ajinath/0001-old-home/ajinath/work/00_Me/c_cpp_shell_sc
 CMakeFiles/stringtuto.dir/all:
 	$(MAKE) -f CMakeFiles/stringtuto.dir/build.make CMakeFiles/stringtuto.dir/depend
 	$(MAKE) -f CMakeFiles/stringtuto.dir/build.make CMakeFiles/stringtuto.dir/build
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ajinath/0001-old-home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/CMakeFiles  1
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/CMakeFiles  1
 	@echo "Built target stringtuto"
 .PHONY : CMakeFiles/stringtuto.dir/all
 
@@ -72,9 +72,9 @@ all: CMakeFiles/stringtuto.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/stringtuto.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajinath/0001-old-home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/CMakeFiles 1
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/CMakeFiles 1
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/stringtuto.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajinath/0001-old-home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/CMakeFiles 0
 .PHONY : CMakeFiles/stringtuto.dir/rule
 
 # Convenience name for target.

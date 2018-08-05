@@ -41,7 +41,7 @@ CMAKE_EDIT_COMMAND = /usr/bin/ccmake
 CMAKE_SOURCE_DIR = /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/ajinath/0001-old-home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings
+CMAKE_BINARY_DIR = /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings
 
 # Include any dependencies generated for this target.
 include CMakeFiles/stringtuto.dir/depend.make
@@ -53,8 +53,8 @@ include CMakeFiles/stringtuto.dir/progress.make
 include CMakeFiles/stringtuto.dir/flags.make
 
 CMakeFiles/stringtuto.dir/src/strings_basic.cpp.o: CMakeFiles/stringtuto.dir/flags.make
-CMakeFiles/stringtuto.dir/src/strings_basic.cpp.o: /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/src/strings_basic.cpp
-	$(CMAKE_COMMAND) -E cmake_progress_report /home/ajinath/0001-old-home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/CMakeFiles $(CMAKE_PROGRESS_1)
+CMakeFiles/stringtuto.dir/src/strings_basic.cpp.o: src/strings_basic.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/CMakeFiles $(CMAKE_PROGRESS_1)
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/stringtuto.dir/src/strings_basic.cpp.o"
 	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/stringtuto.dir/src/strings_basic.cpp.o -c /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/src/strings_basic.cpp
 
@@ -100,6 +100,6 @@ CMakeFiles/stringtuto.dir/clean:
 .PHONY : CMakeFiles/stringtuto.dir/clean
 
 CMakeFiles/stringtuto.dir/depend:
-	cd /home/ajinath/0001-old-home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings /home/ajinath/0001-old-home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings /home/ajinath/0001-old-home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings /home/ajinath/0001-old-home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/CMakeFiles/stringtuto.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings /home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/CMakeFiles/stringtuto.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/stringtuto.dir/depend
 

@@ -4,7 +4,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
-  "/home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/src/strings_basic.cpp" "/home/ajinath/0001-old-home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/CMakeFiles/stringtuto.dir/src/strings_basic.cpp.o"
+  "/home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/src/strings_basic.cpp" "/home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/strings/CMakeFiles/stringtuto.dir/src/strings_basic.cpp.o"
   )
 SET(CMAKE_CXX_COMPILER_ID "GNU")
 
