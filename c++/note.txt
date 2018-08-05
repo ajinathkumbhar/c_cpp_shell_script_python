@@ -37,6 +37,9 @@ system/core/init/init.cpp
 	3. dynamic_cast
 	4. reinterpret_cast
 - https://www.geeksforgeeks.org/counts-distinct-consecutive-sub-string-length-two-using-c-stl/        -- rewise after map
+- C++ doesn’t allow to create an stack allocated array in a class whose size is not constant
+- std::lexicographical_compare() in C++STL
+- std::set_symmetric_difference in C++
 
 
 
@@ -49,11 +52,16 @@ system/core/init/init.cpp
 
 
 
+- File stream
+	1. fstream
+	2. ifstream
+	3. ofstream
 
-
-
-
-
+- string stream
+	1. stringstream
+	2. ostringstream
+	3. istringstream
+	
 
 
 
