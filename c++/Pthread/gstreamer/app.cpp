@@ -67,14 +67,14 @@ void * commandProducer(void * src) {
 			LOGE("failed to send request");
 			break;
 		}
-		
+
+		usleep(8000000);
 
 		if (req == STOPPED) {
 			req = PLAYING;
 			continue;
 		}
 		req++;
-		usleep(8000000);
 
 
 	}
@@ -83,8 +83,7 @@ void * commandProducer(void * src) {
 }
 
 void * commandConsumer(void * src) {
-// pthread_t tid = pthread_self();
-// pthread_cancel(tid);
+
 #define CMDPLAY "playbin uri=file:///home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/Pthread/gstreamer/start.mp3"
 #define CMDPAUSE "playbin uri=file:///home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/Pthread/gstreamer/pause.mp3"
 #define CMDRESUME "playbin uri=file:///home/ajinath/work/00_Me/c_cpp_shell_script_python/c++/Pthread/gstreamer/resume.mp3"
@@ -120,7 +119,7 @@ void * commandConsumer(void * src) {
 		}
 
 		localReq = mPlayerReq;
-		
+
 		switch (localReq) {
 			case PLAYING:
 			LOGD("Request received : PLAYING");
@@ -145,7 +144,6 @@ void * commandConsumer(void * src) {
 
     /* Start playing */
 		gst_element_set_state (pipeline, GST_STATE_PLAYING);
-    // gst_element_set_state (pipeline, GST_STATE_PAUSED);
 
     /* Wait until error or EOS */
 		bus = gst_element_get_bus (pipeline);
@@ -176,17 +174,13 @@ void * commandConsumer(void * src) {
 			LOGE("failed to send signal");
 		}
 		LOGD("sending signal");
-		
+
 		prevReq = localReq;
 
 		if (pthread_mutex_unlock(&cMutex) != 0) {
 			LOGE("failed to unlock on request received");
 		}
 
-    // if ( localReq == STOPPED) {
-    //   LOGD("Treminate commandConsumer");
-    //   break;
-    // }
 	}
 }
 
@@ -197,9 +191,9 @@ void * musixThread(void * pipeline) {
 		if(pthread_mutex_lock(&pMutex) !=0 ) {
 			LOGE("failed to get lock");
 		}
-		
+
 		mPipeline = gst_parse_launch (MUSIC_1, NULL);
-		
+
 		if (mPipeline == NULL ) {
 			LOGE("failed to gst_parse_launch");
 			pthread_cancel(pthread_self());
@@ -224,12 +218,11 @@ void * musixThread(void * pipeline) {
 			gst_message_unref (mMsg);
 		gst_object_unref (mBus);
 
-
 		LOGD("EXIT");
 	}
 
 
-	
+
   //=========================================
 
 }
@@ -247,7 +240,7 @@ void * musixProducer(void * src) {
 		if (ret != 0 ) {
 			LOGE("failed to lock ");
 		}
-		
+
 		if (playThread == NULL) {
 			LOGE("creating new playthread");
 			pthread_create(&playThread, NULL, musixThread, NULL);
@@ -337,7 +330,7 @@ int main(int argc, char *argv[])
 
 	pthread_create(&cmdProducer, NULL, commandProducer, NULL);
 	pthread_setname_np(cmdProducer,"cmdProducer");
-	
+
 
 
 	
