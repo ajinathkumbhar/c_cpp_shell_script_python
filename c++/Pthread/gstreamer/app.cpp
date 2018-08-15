@@ -328,6 +328,7 @@ int main(int argc, char *argv[])
 	pthread_create(&cmdConsumer, NULL, commandConsumer, NULL);
 	pthread_setname_np(cmdConsumer,"cmdConsumer");
 
+	printf("  ----------------- %d  %lu  %llu \n",cmdConsumer);
 	pthread_create(&cmdProducer, NULL, commandProducer, NULL);
 	pthread_setname_np(cmdProducer,"cmdProducer");
 
