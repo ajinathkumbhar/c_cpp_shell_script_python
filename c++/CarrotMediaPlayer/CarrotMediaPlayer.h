@@ -17,14 +17,34 @@
 enum CmpError {
     CMP_NONE_ERROR = -1,
     GST_INIT_ERROR = 131,
-    
 };
 
-CmpError gCmpError = CMP_NONE_ERROR;
+enum PlayerStatus {
+	CMP_NONE=-1,
+	CMP_PLAY,
+	CMP_PAUSE,
+	CMP_RESUME,
+	CMP_STOP,
+	CMP_REPLAY,
+	CMP_FORWARD,
+	CMP_REVERS,
+};
 
-static int init(int,char**);
-static void dumpGstVersion(void);
-static void sysLogInit(const char *);
+
+class CarrotMediaPlayer {
+private:
+	PlayerStatus status;
+	CmpError error;
+	int init(int,char**);
+
+public:
+	CarrotMediaPlayer();
+	CarrotMediaPlayer(int,char **);
+
+	~CarrotMediaPlayer();
+	void dumpGstVersion(void);
+};
+
 
 #endif /* CARROTMEDIAPLAYER_H */
 
