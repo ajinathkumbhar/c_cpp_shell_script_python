@@ -11,12 +11,18 @@
  * Created on 18 August, 2018, 3:47 PM
  */
 
+#include <vector>
+#include <gst/gst.h>
+#include <cstdlib>
+#include <syslog.h>
+
 #ifndef CARROTMEDIAPLAYER_H
 #define CARROTMEDIAPLAYER_H
 
 enum CmpError {
-    CMP_NONE_ERROR = -1,
-    GST_INIT_ERROR = 131,
+	CMP_OK = 1,
+    CMP_GST_INIT_ERROR = 131,
+    CMP_PREPARE_ERROR= 132,
 };
 
 enum PlayerStatus {
@@ -36,6 +42,7 @@ private:
 	PlayerStatus status;
 	CmpError error;
 	int init(int,char**);
+	std::vector<GstElement *> gstElementList;
 
 public:
 	CarrotMediaPlayer();
@@ -43,6 +50,7 @@ public:
 
 	~CarrotMediaPlayer();
 	void dumpGstVersion(void);
+	bool prepare(void);
 };
 
 

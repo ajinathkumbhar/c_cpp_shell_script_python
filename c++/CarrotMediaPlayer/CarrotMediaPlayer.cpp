@@ -11,9 +11,7 @@
  * Created on 18 August, 2018, 3:46 PM
  */
 
-#include <cstdlib>
-#include <gstreamer-1.0/gst/gst.h>
-#include <syslog.h>
+
 
 #include "CarrotMediaPlayer.h"
 
@@ -24,7 +22,7 @@ CarrotMediaPlayer::CarrotMediaPlayer() {
 
 CarrotMediaPlayer::CarrotMediaPlayer(int argc, char ** argv) {
     syslog(LOG_NOTICE,"constructor called : CarrotMediaPlayer");
-	error = CMP_NONE_ERROR;
+	error = CMP_OK;
 	status = CMP_NONE;
 	GError * gstErr = NULL;
 
@@ -38,6 +36,8 @@ CarrotMediaPlayer::CarrotMediaPlayer(int argc, char ** argv) {
 
 CarrotMediaPlayer::~CarrotMediaPlayer() {
 	syslog(LOG_NOTICE,"De-constructor called : CarrotMediaPlayer");
+	for (unsigned int eIndex = 0 ; eIndex < gstElementList.size(); eIndex++ )
+		gst_object_unref (GST_OBJECT (gstElementList.at(eIndex)));
 }
 
 
@@ -57,4 +57,15 @@ void CarrotMediaPlayer::dumpGstVersion(){
 
 }
 
+bool CarrotMediaPlayer::prepare(){
+	GstElement * elementSrc;
+	elementSrc = gst_element_factory_make("fakesrc","cmpsrc");
+	if (!elementSrc) {
+		syslog(LOG_CRIT,"failed  to creatre element of type cmpsrc \n");
+		this->error = CMP_PREPARE_ERROR;
+		return false;
+	}
+	gstElementList.push_back(elementSrc);
+	return true;
+}
 

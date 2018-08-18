@@ -15,5 +15,10 @@ static void sysLogInit(const char * kCommand) {
 int main(int argc, char** argv) {
 	sysLogInit(argv[0]);
 	CarrotMediaPlayer cPlayer(argc,argv);
+	if(!cPlayer.prepare()){
+		syslog(LOG_ERR,"prepare failed");
+		return -1;
+	}
+	
     return 0;
 }

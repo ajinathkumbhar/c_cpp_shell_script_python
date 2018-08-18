@@ -1,1 +1,3 @@
 g++ CarrotMediaPlayer.cpp -o CarrotMediaPlayer -Wall -Wunused-function `pkg-config --cflags --libs gstreamer-1.0` && ./CarrotMediaPlayer
+
+g++ cPlay.cpp CarrotMediaPlayer.cpp -o cPlay -Wall -Wunused-function `pkg-config --cflags --libs gstreamer-1.0` && ./cPlay
