@@ -1,0 +1,46 @@
+---C---
+- Rate yourself in C and CPP. (7/6)
+- How process executes by system OR how main gets executes by system ?
+- Can we replaced main fuction OR Is there any way to execute program without main fuction ?
+- How process loader knows the main() function symbol address ?
+- #define vs Const
+- Count the no of 1s in decimal number and what is complexity of process. ( hint (O)n and (O)0)
+- Did you used optimisation and what is (O)n optimisation. ?
+- What are the optimisation techiques and list some of them 
+- Take your first name and count each character occurence and arrange them in to A-Z order.
+- Explain memory allocation in c and cpp.
+- Did you faced malloc() failed ever ? if failed then give example.
+- What is malloc max limit and how to modify.
+- How to delete a single linked list node using single pointer?
+- What are the oop's concept ?
+- Explain any one oops concept and where you used ? How oops helps you to resolve your problem ?
+- Loop optimization
+- Macro vs inline 
+- Camera pipeline 
+- Inheritance 
+- Thread sync.(condition variable, shared mem and other types)
+- Thread deadlock and example and how to avoid it.
+- Malloc free() call option. (Free allocated mem without free() call)
+- ION memory 
+- Binder IPC and it's alternate options in android
+- Count bit set in unsinged char byte (hint lookup table)
+- Consider 100 threads and a single function, threads calles function. So, how much stack frame created ? Is function stack frame is inside thread's stack frame ?
+- Segmentation fault and page fault.
+- Strace tool and valgrid tool
+- Treble project in details with CTS and VTS
+- Static and extern for function 
+- Storage classess
+- Little endian and Big indian 
+- Output ? 
+int main() {
+int arr[2] = {1,2};
+arr++;
+}
+  
+- Complete boot process in details (PWR BUTTON PRESS, PBL,SBL,LK,KERNEL,DRIVERS PROBE,INIT,ZYGOATE, SYSTEM SERVER and APPLICATION)
+- Android debugging procedure with example ( Native issue and app issue)
+- Filesystem ( ext4, fat, jff2s, squasfs, etc)
+- Qualcomm android partitions (all)
+- mmap() system call
+- const pointer and all const possiblities with pointer.
+
