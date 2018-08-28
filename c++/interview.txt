@@ -22,11 +22,92 @@ start address 0x080482d0
 objdump --disassemble test.o
 080482d0 <_start>:
 
+objdump --disasseble test.o
+_start
+_finit
+_init
+_main
+_init >> _libc_start_main()
 
+objdump -R test.o
 
+Now the ball is on libc's hand. __libc_start_main is a function in libc.so.6. If you look for __libc_start_main in glibc source code, the prototype looks like this.
+
+extern int BP_SYM (__libc_start_main) (int (*main) (int, char **, char **),
+		int argc,
+		char *__unbounded *__unbounded ubp_av,
+		void (*init) (void),
+		void (*fini) (void),
+		void (*rtld_fini) (void),
+		void *__unbounded stack_end)
+__attribute__ ((noreturn));
+
+------
+------
+Here is what happens. 
+
+#GCC build your program with crtbegin.o/crtend.o/gcrt1.o And the other default libraries are dynamically linked by default. Starting address of the executable is set to that of _start.
+#Kernel loads the executable and setup text/data/bss/stack, especially, kernel allocate page(s) for arguments and environment variables and pushes all necessary information on stack.
+#Control is pased to _start. _start gets all information from stack setup by kernel, sets up argument stack for __libc_start_main, and calls it. 
+#__libc_start_main initializes necessary stuffs, especially C library(such as malloc) and thread environment and calls our main. 
+#our main is called with main(argv, argv) Actually, here one interesting point is the signature of main. __libc_start_main thinks main's signature as main(int, char **, char **) If you are curious, try the following prgram.
+main(int argc, char** argv, char** env)
+{
+    int i = 0;
+    while(env[i] != 0)
+    {
+       printf("%s\n", env[i++]);
+    }
+    return(0);
+}
+
+******************************************************************************************************************
 Q: Can we replaced main fuction OR Is there any way to execute program without main fuction ?
+
+#include<stdio.h>
+#include<stdlib.h>
+ 
+void _start(){
+ 	printf("test");
+ 	 exit(0);
+}
+
+------
+ cc prog_without_main.c -nostartfiles
+
+******************************************************************************************************************
 Q: How process loader knows the main() function symbol address ?
+- From elf header 
+
+$ objdump -f test.o 
+
+test.o:     file format elf64-x86-64
+architecture: i386:x86-64, flags 0x00000112:
+EXEC_P, HAS_SYMS, D_PAGED
+start address 0x0000000000400440
+
+
+$ nm test.o 
+
+00000000004005c0 T __libc_csu_fini
+0000000000400550 T __libc_csu_init
+                 U __libc_start_main@@GLIBC_2.2.5
+000000000040052d T main
+                 U printf@@GLIBC_2.2.5
+00000000004004a0 t register_tm_clones
+0000000000400440 T _start
+0000000000601040 D __TMC_END__
+
+
+e_entry >> _start >> __libc_start_main() >> main()
+******************************************************************************************************************
 Q: #define vs Const
+- macro is just replaced with value in preprocessing stage
+- macro Doesn't check data type
+- With const, we can declare actual variable. 
+- With const, making your code known to the debugger 
+******************************************************************************************************************
+
 Q: Count the no of 1s in decimal number and what is complexity of process. ( hint (O)n and (O)0)
 Q: Did you used optimisation and what is (O)n optimisation. ?
 Q: What are the optimisation techiques and list some of them 
@@ -70,3 +151,9 @@ Q: Consider we have 100 thread which represent a seperate modules. These thread 
 Q: Challanging issue debug and how it resolved  ?
 Q: Setup skype call.
 Q: Function pointer.
+Q: Output ?
+
+#define fun A##a##B##b
+print("%s\n",fun);
+
+Q: Preprocessor directive

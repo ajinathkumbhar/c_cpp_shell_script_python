@@ -1,13 +1,8 @@
+
 #include<stdio.h>
 #include<stdlib.h>
-
-void init(void);
-
-void _start() {
-	init();
+ 
+void _start(){
+ 	printf("test");
+ 	 exit(0);
 }
-
-void init() {
-	printf("----------------------\n");
-}
-
