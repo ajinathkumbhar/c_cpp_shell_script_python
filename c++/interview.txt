@@ -7,13 +7,21 @@ Ans:
 3.Assembly is the third stage of compilation. It takes the assembly source code and produces an assembly listing with offsets. The assembler output is stored in an object file.
 4.Linking is the final stage of compilation. It takes one or more object files or libraries as input and combines them to produce a single (usually executable) file. In doing so, it resolves references to external symbols, assigns final addresses to procedures/functions and variables, and revises code and data to reflect new addresses (a process called relocation).
 
-gcc -v test.c ----- for all verbose output
-gcc -E test.c ----- for preprocessing stage
-gcc -S test.c ----- for assembly stage
-gcc -o test.o test.c --- for linker stage 
+You can see the detailed compilation process by enabling -v (verbose) option. For example,
+gcc -v test.c           ----- for all verbose output of gcc 
+
+gcc -E test.c > test.i  ----- for preprocessing stage
+gcc -S test.c           ----- for compiler stage
+gcc -o test.o test.s    ----- for assembly stage, the gcc will excute 'as' and 'ld'  at this stage. so we no need to link external libs, 
+                              objs seperatly. But you can run only assembler command as below
+as -o test.o test.s
+ld -o test.bin test.o   ----- for linker stage 
+
+What is compile output ?
+- The compiler output is .s assembly code from .i 
 
 test.o is an ELF 
-
+-------------------
 ELF ? It's one of several object and executable file formats used on Unix systems. For our discussion, the interesting thing about ELF is its header format. Every ELF executable has ELF header
 
 objdump -f test.o 
